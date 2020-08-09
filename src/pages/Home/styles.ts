@@ -20,10 +20,14 @@ export const Content = styled.div`
   transition: 0.3s;
 
   @media (max-width: 570px) {
-    width: 100vw;
-    height: 100vh;
     flex-direction: column;
   }
+
+  @media (max-width: 820px) {
+    width: 100vw;
+    height: 100vh;
+  }
+
   ul {
     margin-top: 16px;
     list-style: none;
@@ -71,6 +75,10 @@ export const Header = styled.div`
   @media (max-width: 570px) {
     border-radius: 0 0 24px 24px;
     flex-direction: row;
+  }
+
+  @media (max-width: 820px) {
+    height: 100vh;
   }
   h1 {
     padding: 8px;

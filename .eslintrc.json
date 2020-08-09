@@ -25,7 +25,7 @@
         "prettier"
     ],
     "rules": {
-      "react/prop-types": [2, { "ignore": ["icon","name","linkName","url","children","img","title"] }],
+      "react/prop-types": [2, { "ignore": ["author","icon","name","linkName","url","children","img","title"] }],
       "@typescript-eslint/explicit-function-return-type": "off",
       "prettier/prettier":"error",
       "react-hooks/rules-of-hooks":"error",
