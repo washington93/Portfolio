@@ -10,14 +10,7 @@ interface IBook {
   poster?: any
 }
 
-const Book: React.FC<IBook> = ({
-  title,
-  author = '',
-  poster,
-  children,
-  ...rest
-}) => {
-  const a = 1
+const Book: React.FC<IBook> = ({ title, poster, children }) => {
   return (
     <Container>
       <Figure>
