@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import Ca from 'react-bootstrap/Carousel'
 
-import next from '../../assets/next.svg'
-
 export const Carousel = styled(Ca)`
   display: flex;
   align-items: center;
