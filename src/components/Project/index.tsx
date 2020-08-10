@@ -10,7 +10,7 @@ const Project: React.FC = () => {
     <>
       <Container>
         <Thumbnail>
-          <img src={img} />
+          <img src={img} alt="Consumindo Api do League of Legends" />
         </Thumbnail>
         <About>
           <Title>Consumindo Api do League of Legends</Title>
@@ -19,7 +19,7 @@ const Project: React.FC = () => {
       </Container>
       <Container>
         <Thumbnail>
-          <img src={imgDefault} />
+          <img src={imgDefault} alt="defaul" />
         </Thumbnail>
         <About>
           <Title>Jogo da Memória do Mortal Kombate</Title>
@@ -28,7 +28,7 @@ const Project: React.FC = () => {
       </Container>
       <Container>
         <Thumbnail>
-          <img src={imgDefault} />
+          <img src={imgDefault} alt="defaul" />
         </Thumbnail>
         <About>
           <Title>Consumindo Api do Github</Title>
@@ -37,7 +37,7 @@ const Project: React.FC = () => {
       </Container>
       <Container>
         <Thumbnail>
-          <img src={imgDefault} />
+          <img src={imgDefault} alt="defaul" />
         </Thumbnail>
         <About>
           <Title>Backend Bootcamp da Rocketseat</Title>
@@ -49,7 +49,7 @@ const Project: React.FC = () => {
       </Container>
       <Container>
         <Thumbnail>
-          <img src={imgDefault} />
+          <img src={imgDefault} alt="defaul" />
         </Thumbnail>
         <About>
           <Title>Semana OmniStack da Rocketseat</Title>
@@ -60,7 +60,7 @@ const Project: React.FC = () => {
       </Container>
       <Container>
         <Thumbnail>
-          <img src={imgDefault} />
+          <img src={imgDefault} alt="defaul" />
         </Thumbnail>
         <About>
           <Title>Twitter clone</Title>
