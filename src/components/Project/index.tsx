@@ -6,7 +6,6 @@ import img from '../../assets/thumbnails/riot-api.jpg'
 import imgDefault from '../../assets/default.jpg'
 
 const Project: React.FC = () => {
-  const a = ''
   return (
     <>
       <Container>
