@@ -6,21 +6,32 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 271;
+    height: auto;
     width: auto;
     > h2 {
-      height: 128px;
+      display: flex;
+      align-items: center;
+      height: 64px;
+      font-size: 18px;
       text-align: center;
     }
     > div {
       display: flex;
       align-items: center;
+      justify-content: center;
     }
+
+    div figcaption {
+      height: 250px;
+      flex: 1;
+      text-align: justify;
+    }
+
     figcaption {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 8px;
+      padding: 16px;
     }
   }
 `

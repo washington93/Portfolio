@@ -15,6 +15,7 @@ import ReadBooks from '../../components/ReadBooks'
 import MyStacks from '../../components/MyStacks'
 import ForwardButton from '../../components/ForwardButton'
 import ModalButton from '../../components/ModalButton'
+import MyProjects from '../../components/MyProjects'
 
 import { Container, Content, Header, Title, Button } from './styles'
 
@@ -108,10 +109,14 @@ const Home: React.FC = () => {
             </ModalButton>
           </li>
           <li>
-            <Button variant={buttonsStyle} disabled>
-              <FaFlask />
-              Projetos
-            </Button>
+            <ModalButton
+              name="Meus Apps"
+              icon={<FaFlask />}
+              title="Meus Apps"
+              variant={buttonsStyle}
+            >
+              <MyProjects />
+            </ModalButton>
           </li>
         </ul>
       </Content>

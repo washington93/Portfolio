@@ -19,11 +19,10 @@ const ReadBooks: React.FC = () => (
         </Book>
       </Carousel.Item>
       <Carousel.Item>
-        <Book
-          title="Crie aplicações com Angular"
-          author="ola"
-          poster={bcrieap}
-        />
+        <Book title="Crie aplicações com Angular" author="ola" poster={bcrieap}>
+          Nesse livro aprendi os conceitos basicos de Angula 2. Como
+          configuração do ambiente, clis e arquitetura do sistema.
+        </Book>
       </Carousel.Item>
     </Carousel>
   </>
