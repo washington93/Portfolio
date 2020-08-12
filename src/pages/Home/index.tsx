@@ -28,7 +28,7 @@ const Home: React.FC = () => {
         <Header>
           <Title>
             <h1>Washington da Silva Ribeiro</h1>
-            <h2>Desenvolvedor FullStack</h2>
+            <h2>Desenvolvedor FullStack Jr.</h2>
           </Title>
           <img src={perfil} alt="" />
         </Header>
@@ -92,9 +92,6 @@ const Home: React.FC = () => {
             >
               <p>
                 <strong>E-mail:</strong> washington.s@escolar.ifrn.edu.br
-              </p>
-              <p>
-                <strong>WhatsApp:</strong> (84)99214-0775{' '}
               </p>
             </ModalButton>
           </li>
