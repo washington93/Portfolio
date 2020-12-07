@@ -9,12 +9,15 @@ import {
   FaHammer,
 } from 'react-icons/fa'
 import { GoBook } from 'react-icons/go'
+import Viewer, { Worker } from '@phuocng/react-pdf-viewer'
+import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css'
 
 import perfil from '../../assets/foto_perfil.png'
 import ReadBooks from '../../components/ReadBooks'
 import MyStacks from '../../components/MyStacks'
 import ForwardButton from '../../components/ForwardButton'
 import ModalButton from '../../components/ModalButton'
+import OpenButton from '../../components/OpenButton'
 import MyProjects from '../../components/MyProjects'
 
 import { Container, Content, Header, Title, Button } from './styles'
@@ -64,16 +67,20 @@ const Home: React.FC = () => {
             </ForwardButton>
           </li>
           <li>
-            <ModalButton
+            <OpenButton
               // href={process.env.PUBLIC_URL + '/cv.pdf'}
               // download="cv_washingtonsr"
               name="cv"
               title="cv"
-              icon={<FaFileAlt />}
+              onClick={() => {
+                window.open(
+                  'https://drive.google.com/file/d/1pDNUbM8T3R4sKVvaS9jhKVbb2V1zllpz/view?usp=sharing',
+                )
+              }}
               variant={buttonsStyle}
             >
-              {/* CV */}
-            </ModalButton>
+              <FaFileAlt />
+            </OpenButton>
           </li>
           <li>
             <ModalButton

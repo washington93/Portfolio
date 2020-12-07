@@ -4,16 +4,25 @@ export const Container = styled.div`
   figure {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: auto;
+    height: max-content;
     width: auto;
-    > h2 {
+    position: relative;
+    .title {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      height: 64px;
-      font-size: 18px;
+      justify-content: center;
+      max-width: 85%;
+      padding-left: 8px;
+      padding-right: 8px;
+      height: 84px;
       text-align: center;
+      > h2 {
+        font-size: 18px;
+        text-align: center;
+      }
     }
     > div {
       display: flex;

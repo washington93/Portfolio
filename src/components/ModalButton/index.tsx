@@ -29,7 +29,7 @@ const FowardButton: React.FC<IFowardButton> = ({
         {icon}
         {name}
       </Button>
-      <Modal show={show} onHide={handleClose} scrollable={false}>
+      <Modal show={show} onHide={handleClose} scrollable={false} centered>
         {title ? (
           <Modal.Header closeButton>
             <Modal.Title>{title}</Modal.Title>

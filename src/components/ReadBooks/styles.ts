@@ -12,13 +12,13 @@ export const Carousel = styled(Ca)`
 
   .carousel-control-prev,
   .carousel-control-next {
-    height: 50px;
+    height: 84px;
     width: 50px;
     outline: $color-white;
     background-size: 100%, 100%;
     border-radius: 50%;
-    border: 1px solid $color-white;
-    background-color: $color-white;
+    border: none;
+    background-color: none;
   }
 
   .carousel-control-prev-icon {
