@@ -19,6 +19,12 @@ export const Content = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 
+  .git-status {
+    width: 100%;
+    flex: 1;
+    border-radius: 0;
+  }
+
   @media (max-width: 570px) {
     flex-direction: column;
   }
@@ -60,22 +66,28 @@ export const Content = styled.div`
       }
     }
   }
+  .content {
+    background-color: red;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 24px 0 0 24px;
+    padding: 8px;
+    @media (max-width: 570px) {
+      border-radius: 0 0 24px 24px;
+    }
+  }
 `
 
 export const Header = styled.div`
-  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 24px 0 0 24px;
-  padding: 8px;
-
-  @media (max-width: 570px) {
-    border-radius: 0 0 24px 24px;
-    flex-direction: row;
-  }
 
   @media (max-width: 820px) {
     height: 100vh;

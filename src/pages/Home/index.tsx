@@ -9,8 +9,6 @@ import {
   FaHammer,
 } from 'react-icons/fa'
 import { GoBook } from 'react-icons/go'
-import Viewer, { Worker } from '@phuocng/react-pdf-viewer'
-import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css'
 
 import perfil from '../../assets/foto_perfil.png'
 import ReadBooks from '../../components/ReadBooks'
@@ -20,7 +18,7 @@ import ModalButton from '../../components/ModalButton'
 import OpenButton from '../../components/OpenButton'
 import MyProjects from '../../components/MyProjects'
 
-import { Container, Content, Header, Title, Button } from './styles'
+import { Container, Content, Header, Title } from './styles'
 
 const Home: React.FC = () => {
   const buttonsStyle = 'light'
@@ -28,13 +26,19 @@ const Home: React.FC = () => {
   return (
     <Container>
       <Content>
-        <Header>
-          <Title>
-            <h1>Washington da Silva Ribeiro</h1>
-            <h2>Desenvolvedor FullStack Jr.</h2>
-          </Title>
-          <img src={perfil} alt="" />
-        </Header>
+        <div className="content">
+          <Header>
+            <Title>
+              <h1>Washington da Silva Ribeiro</h1>
+              <h2>Desenvolvedor FullStack Jr.</h2>
+            </Title>
+            <img src={perfil} alt="" />
+          </Header>
+          <img
+            className="git-status"
+            src="https://github-readme-stats.vercel.app/api?username=washington93&count_private=true&theme=graywhite"
+          />
+        </div>
         <ul>
           <li>
             <ForwardButton
