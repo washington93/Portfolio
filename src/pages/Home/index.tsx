@@ -37,6 +37,7 @@ const Home: React.FC = () => {
           <img
             className="git-status"
             src="https://github-readme-stats.vercel.app/api?username=washington93&count_private=true&theme=graywhite"
+            alt="washington93 github status"
           />
         </div>
         <ul>
