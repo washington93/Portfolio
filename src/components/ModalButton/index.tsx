@@ -1,8 +1,7 @@
 import React, { useState, HTMLAttributes } from 'react'
 import Bt from 'react-bootstrap/Button'
-import Modal from 'react-bootstrap/Modal'
 
-import { Button } from './styles'
+import { Button, Modal } from './styles'
 
 interface IFowardButton extends HTMLAttributes<Bt> {
   name?: string
@@ -30,7 +29,7 @@ const FowardButton: React.FC<IFowardButton> = ({
         {icon}
         {name}
       </Button>
-      <Modal show={show} onHide={handleClose} centered>
+      <Modal show={show} onHide={handleClose} scrollable={false}>
         {title ? (
           <Modal.Header closeButton>
             <Modal.Title>{title}</Modal.Title>

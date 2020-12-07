@@ -64,14 +64,16 @@ const Home: React.FC = () => {
             </ForwardButton>
           </li>
           <li>
-            <Button
+            <ModalButton
+              // href={process.env.PUBLIC_URL + '/cv.pdf'}
+              // download="cv_washingtonsr"
+              name="cv"
+              title="cv"
+              icon={<FaFileAlt />}
               variant={buttonsStyle}
-              href={process.env.PUBLIC_URL + '/cv.pdf'}
-              download="cv_washingtonsr"
             >
-              <FaFileAlt />
-              CV
-            </Button>
+              {/* CV */}
+            </ModalButton>
           </li>
           <li>
             <ModalButton
